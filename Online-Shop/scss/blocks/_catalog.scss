@@ -44,6 +44,22 @@
     gap: 40px;
   }
 
+@include vp-1023 {
+  .catalog {
+    &__title { font-size: 36px; line-height: 46px; margin-bottom: 28px; }
+    &__wrapper { grid-template-columns: 240px 1fr; gap: 28px; }
+    &__list { gap: 28px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  }
+}
+
+@include vp-767 {
+  .catalog {
+    &__title { font-size: 28px; line-height: 36px; margin-bottom: 20px; }
+    &__wrapper { grid-template-columns: 1fr; }
+    &__list { grid-template-columns: 1fr; gap: 20px; }
+  }
+}
+
   &__pagination {
     display: flex;
     align-items: center;

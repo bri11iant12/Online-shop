@@ -97,3 +97,17 @@
     }
   }
 }
+
+@include vp-1023 {
+  .main-menu {
+    &__wrapper { padding: 22px; gap: 28px; }
+    &__list { min-width: 280px; }
+  }
+}
+
+@include vp-767 {
+  .main-menu {
+    &__wrapper { padding: 18px; }
+    &__list { min-width: 100%; }
+  }
+}

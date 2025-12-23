@@ -108,3 +108,25 @@
     line-height: 19.6px;
   }
 }
+
+@include vp-1023 {
+  .header {
+    &__logo-link { margin-right: 24px; }
+    &__catalog-btn { margin-right: 16px; padding: 8px 14px; }
+    &__user-list { gap: 12px; }
+    &__nav-list { gap: 18px; }
+    &__btn { width: 140px; }
+  }
+}
+
+@include vp-767 {
+  .header {
+    &__top { padding: 12px 0; }
+    &__logo-link { margin-right: 12px; svg { height: 22px; width: 110px; } }
+    &__catalog-btn { display: none; }
+    &__user-list { gap: 8px; }
+    &__bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+    &__nav-list { display: none; }
+    &__contacts { margin-left: 0; }
+  }
+}
