@@ -20,6 +20,8 @@
     position: absolute;
     top: 0;
     right: 70px;
+    width: 253px;
+    height: 319px;
   }
 
   &__text {
@@ -40,5 +42,44 @@
 
   &__btn {
     margin-top: 27px;
+  }
+}
+
+@include vp-767 {
+  .questions {
+    &__wrapper {
+      padding: 40px 0 0;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 31.2px;
+      margin: 0 0 20px 0;
+    }
+
+    &__img {
+      position: static;
+      width: 100%;
+      height: auto;
+      max-width: 253px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22.4px;
+      margin: 0 0 20px 0;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    &__btn {
+      margin-top: 0;
+      width: 100%;
+    }
   }
 }

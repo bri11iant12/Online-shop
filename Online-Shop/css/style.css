@@ -1220,6 +1220,18 @@ button {
   padding: 0 20px;
 }
 
+@media (max-width: 1023px) {
+  .container {
+    max-width: 960px;
+    padding: 0 18px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1359,6 +1371,53 @@ button {
   line-height: 19.6px;
 }
 
+@media (max-width: 1023px) {
+  .header__logo-link {
+    margin-right: 24px;
+  }
+  .header__catalog-btn {
+    margin-right: 16px;
+    padding: 8px 14px;
+  }
+  .header__user-list {
+    gap: 12px;
+  }
+  .header__nav-list {
+    gap: 18px;
+  }
+  .header__btn {
+    width: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .header__top {
+    padding: 12px 0;
+  }
+  .header__logo-link {
+    margin-right: 12px;
+  }
+  .header__logo-link svg {
+    height: 22px;
+    width: 110px;
+  }
+  .header__catalog-btn {
+    display: none;
+  }
+  .header__user-list {
+    gap: 8px;
+  }
+  .header__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .header__nav-list {
+    display: none;
+  }
+  .header__contacts {
+    margin-left: 0;
+  }
+}
 .location {
   align-items: center;
   display: flex;
@@ -1592,6 +1651,23 @@ button {
   padding: 0 0 10px;
 }
 
+@media (max-width: 1023px) {
+  .main-menu__wrapper {
+    padding: 22px;
+    gap: 28px;
+  }
+  .main-menu__list {
+    min-width: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .main-menu__wrapper {
+    padding: 18px;
+  }
+  .main-menu__list {
+    min-width: 100%;
+  }
+}
 .catalog__title {
   margin: 0 0 44px 0;
   font-size: 42px;
@@ -1630,6 +1706,35 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 40px;
+}
+@media (max-width: 1023px) {
+  .catalog .catalog__title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 28px;
+  }
+  .catalog .catalog__wrapper {
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+  }
+  .catalog .catalog__list {
+    gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .catalog .catalog__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .catalog .catalog__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .catalog .catalog__list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 .catalog__pagination {
   display: flex;
@@ -1828,7 +1933,7 @@ button {
   background-color: #F8F8F8;
   border-radius: 12px;
   display: flex;
-  height: 436px;
+  height: auto;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -1838,9 +1943,9 @@ button {
   pointer-events: all;
 }
 .product-card__img {
-  height: 436px;
+  height: auto;
   object-fit: contain;
-  width: 290px;
+  width: 100%;
   transform: scale(1.03);
 }
 .product-card__more {
@@ -1900,6 +2005,56 @@ button {
   right: 0;
 }
 
+@media (max-width: 1023px) {
+  .product-card--small {
+    width: 240px;
+  }
+  .product-card--small__visual {
+    height: auto;
+  }
+  .product-card--small__img {
+    height: auto;
+    width: 100%;
+  }
+  .product-card__visual {
+    height: auto;
+  }
+  .product-card__img {
+    height: auto;
+    width: 100%;
+  }
+  .product-card__title {
+    font-size: 13px;
+  }
+  .product-card__price {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .product-card--small {
+    width: 100%;
+  }
+  .product-card--small__visual {
+    height: auto;
+  }
+  .product-card--small__img {
+    height: auto;
+    width: 100%;
+  }
+  .product-card__visual {
+    height: auto;
+  }
+  .product-card__img {
+    height: auto;
+    width: 100%;
+  }
+  .product-card__title {
+    font-size: 14px;
+  }
+  .product-card__price {
+    font-size: 18px;
+  }
+}
 .tooltip__btn {
   background-color: #ffffff;
   border: 1px solid #000000;
@@ -2133,6 +2288,8 @@ button {
   position: absolute;
   top: 0;
   right: 70px;
+  width: 253px;
+  height: 319px;
 }
 .questions__text {
   max-width: 733px;
@@ -2152,6 +2309,37 @@ button {
   margin-top: 27px;
 }
 
+@media (max-width: 767px) {
+  .questions__wrapper {
+    padding: 40px 0 0;
+  }
+  .questions__title {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin: 0 0 20px 0;
+  }
+  .questions__img {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 253px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .questions__text {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin: 0 0 20px 0;
+  }
+  .questions__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .questions__btn {
+    margin-top: 0;
+    width: 100%;
+  }
+}
 .custom-input {
   display: flex;
   flex-direction: column;
@@ -2334,101 +2522,5 @@ button {
   align-items: center;
   justify-content: center;
 }
-
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-}
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 10000;
-  min-width: 300px;
-  max-width: 500px;
-}
-
-.modal__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 15px;
-}
-
-.modal__title {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.modal__message {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.modal__close {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #999;
-}
-
-.modal--success .modal__title {
-  color: #388e3c;
-}
-
-.modal--error .modal__title {
-  color: #d32f2f;
-}
-
-button.is-disabled {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.is-invalid {
-  border-color: #d32f2f;
-}
-
-.is-error {
-  margin-top: 4px;
-  font-size: 12px;
-  color: #d32f2f;
-}
-
-.custom-checkbox__label.is-invalid {
-  color: #d32f2f;
-}
-
-.custom-checkbox__label.is-invalid .custom-checkbox__box {
-  border-color: #d32f2f;
-}
-
-.is-error {
-  margin-top: 4px;
-  font-size: 12px;
-  color: #d32f2f;
-}
-
-.accordion__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.accordion__content.is-open {
-  max-height: 100%;
-}
-
-
 
 /*# sourceMappingURL=style.css.map */
