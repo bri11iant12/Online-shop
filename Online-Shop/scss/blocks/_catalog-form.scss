@@ -59,3 +59,9 @@
     gap: 35px;
   }
 }
+
+@include vp-767 {
+  .catalog-form {
+    display: none;
+  }
+}
